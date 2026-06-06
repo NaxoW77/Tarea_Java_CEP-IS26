@@ -13,7 +13,7 @@ import java.io.Console;
 public class Calculadora {
 
     // Función para mostrar errores y salir
-    public void mostrarError(String msg) {
+    public static void mostrarError(String msg) {
         System.out.println("Error: "+msg);
         System.exit(1);
         return;
@@ -22,22 +22,22 @@ public class Calculadora {
     // Funciones trigonométricas:
     
     // Función sin(x)
-    public double sinX(double x) {
+    public static double sinX(double x) {
         return Math.sin(x);
     }
 
     // Función cos(x)
-     public double cosX(double x) {
+     public static double cosX(double x) {
         return Math.cos(x);
     }
 
     // Función tan(x)
-     public double tanX(double x) {
+     public static double tanX(double x) {
         return Math.tan(x);
     }
 
     // Función principal
-    public void main(String[] args) {
+    public static void main(String[] args) {
 
                 //Clase Console para recibir entradas
                 Console console = System.console();
