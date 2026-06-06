@@ -9,6 +9,7 @@
 
 import java.io.Console;
 
+// *Añadidas las bases del programa* - Ignacio A.
 public class Calculadora {
 
     // Función para mostrar errores y salir
@@ -18,18 +19,24 @@ public class Calculadora {
         return;
     }
 
+    // Funciones trigonométricas:
+    
+    // Función sin(x)
     public double sinX(double x) {
         return Math.sin(x);
     }
 
+    // Función cos(x)
      public double cosX(double x) {
         return Math.cos(x);
     }
 
+    // Función tan(x)
      public double tanX(double x) {
         return Math.tan(x);
     }
 
+    // Función principal
     public void main(String[] args) {
 
                 //Clase Console para recibir entradas
