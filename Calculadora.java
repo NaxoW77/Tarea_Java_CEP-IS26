@@ -74,6 +74,9 @@ public class Calculadora {
                     mostrarError("Valor inválido.");
                 }
 
+                // Se pasa de ángulos a radianes
+                x = Math.PI*x/180;
+
                 // Se llama a la función correspondiente
                 switch(opcion) {
                     case 1:
