@@ -74,6 +74,22 @@ public class Calculadora {
                     mostrarError("Valor inválido.");
                 }
 
+                // Se llama a la función correspondiente
+                switch(opcion) {
+                    case 1:
+                        resultado = sinX(x);
+                        break;
+                    case 2:
+                        resultado = cosX(x);
+                        break;
+                    case 3:
+                        resultado = tanX(x);
+                        break;
+                }
+
+                // Resultado
+                System.out.println("El resultado es: "+resultado);
+
                 System.exit(0);
     }
 }
