@@ -18,6 +18,18 @@ public class Calculadora {
         return;
     }
 
+    public double sinX(double x) {
+        return Math.sin(x);
+    }
+
+     public double cosX(double x) {
+        return Math.cos(x);
+    }
+
+     public double tanX(double x) {
+        return Math.tan(x);
+    }
+
     public void main(String[] args) {
 
                 //Clase Console para recibir entradas
@@ -41,10 +53,10 @@ public class Calculadora {
                 String entrada = console.readLine("Escribe el número de la opción:\n> ");
 
                 // Comprobación
-                if (entrada != null && !entrada.isEmpty()) {
+                try{
                     opcion = Integer.parseInt(entrada);
-                }else{
-                    mostrarError("Valor inválido");
+                }catch(NumberFormatException e){
+                    mostrarError("Valor inválido.");
                 }
 
                 // Segunda comprobación
@@ -56,10 +68,10 @@ public class Calculadora {
                 String entrada2 = console.readLine("Introduzca el valor del ángulo α:\n> ");
 
                 // Comprobación
-                if (entrada2 != null && !entrada2.isEmpty()) {
+                try{
                     x = Double.parseDouble(entrada2);
-                }else{
-                    mostrarError("Valor inválido");
+                }catch(NumberFormatException e){
+                    mostrarError("Valor inválido.");
                 }
 
                 System.exit(0);
