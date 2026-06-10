@@ -22,7 +22,7 @@ public class Calculadora {
     // Funciones trigonométricas:
     
     // Función sin(x)
-    public static  double sinX(double x) {
+    public static double sinX(double x) {
         return Math.sin(x);
     }
 
