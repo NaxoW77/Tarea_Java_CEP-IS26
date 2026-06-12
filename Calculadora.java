@@ -6,7 +6,6 @@
 // - Cristopher Viquez Quiros
 
 
-
 import java.io.Console;
 
 // *Añadidas las bases del programa* - Ignacio A.
